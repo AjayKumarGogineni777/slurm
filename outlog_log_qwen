@@ -1,0 +1,576 @@
+Pulling Docker image...
+latest: Pulling from lmsysorg/sglang
+23828d760c7b: Pulling fs layer
+18ea39f449f2: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+a2f9ef49a25e: Pulling fs layer
+1c7f2e233b5f: Pulling fs layer
+6d00df402cf8: Pulling fs layer
+fe4f2f514559: Pulling fs layer
+999f45ff216e: Pulling fs layer
+74e0ce3e6cbf: Pulling fs layer
+dfae8e751f33: Pulling fs layer
+6b6f1f09276f: Pulling fs layer
+d9e68ca30619: Pulling fs layer
+02006324a966: Pulling fs layer
+3d1a32501ee0: Pulling fs layer
+a79e61b6522e: Pulling fs layer
+1b18d1e3a9a1: Pulling fs layer
+ee46c34c57c4: Pulling fs layer
+a4cf2ceb5cb4: Pulling fs layer
+0321a8185f79: Pulling fs layer
+d6f95283c949: Pulling fs layer
+a2f9ef49a25e: Waiting
+1c7f2e233b5f: Waiting
+6d00df402cf8: Waiting
+fe4f2f514559: Waiting
+999f45ff216e: Waiting
+74e0ce3e6cbf: Waiting
+dfae8e751f33: Waiting
+6b6f1f09276f: Waiting
+d9e68ca30619: Waiting
+02006324a966: Waiting
+3d1a32501ee0: Waiting
+a79e61b6522e: Waiting
+1b18d1e3a9a1: Waiting
+ee46c34c57c4: Waiting
+a4cf2ceb5cb4: Waiting
+0321a8185f79: Waiting
+d6f95283c949: Waiting
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+23828d760c7b: Verifying Checksum
+23828d760c7b: Download complete
+1c7f2e233b5f: Verifying Checksum
+1c7f2e233b5f: Download complete
+18ea39f449f2: Verifying Checksum
+18ea39f449f2: Download complete
+fe4f2f514559: Verifying Checksum
+fe4f2f514559: Download complete
+a2f9ef49a25e: Verifying Checksum
+a2f9ef49a25e: Download complete
+999f45ff216e: Verifying Checksum
+999f45ff216e: Download complete
+74e0ce3e6cbf: Verifying Checksum
+74e0ce3e6cbf: Download complete
+23828d760c7b: Pull complete
+dfae8e751f33: Verifying Checksum
+dfae8e751f33: Download complete
+6b6f1f09276f: Verifying Checksum
+6b6f1f09276f: Download complete
+02006324a966: Verifying Checksum
+02006324a966: Download complete
+d9e68ca30619: Verifying Checksum
+d9e68ca30619: Download complete
+a79e61b6522e: Verifying Checksum
+a79e61b6522e: Download complete
+1b18d1e3a9a1: Verifying Checksum
+1b18d1e3a9a1: Download complete
+ee46c34c57c4: Verifying Checksum
+ee46c34c57c4: Download complete
+a4cf2ceb5cb4: Verifying Checksum
+a4cf2ceb5cb4: Download complete
+0321a8185f79: Verifying Checksum
+0321a8185f79: Download complete
+18ea39f449f2: Pull complete
+4f4fb700ef54: Pull complete
+3d1a32501ee0: Verifying Checksum
+3d1a32501ee0: Download complete
+a2f9ef49a25e: Pull complete
+1c7f2e233b5f: Pull complete
+6d00df402cf8: Verifying Checksum
+6d00df402cf8: Download complete
+d6f95283c949: Verifying Checksum
+d6f95283c949: Download complete
+6d00df402cf8: Pull complete
+fe4f2f514559: Pull complete
+999f45ff216e: Pull complete
+74e0ce3e6cbf: Pull complete
+dfae8e751f33: Pull complete
+6b6f1f09276f: Pull complete
+d9e68ca30619: Pull complete
+02006324a966: Pull complete
+3d1a32501ee0: Pull complete
+a79e61b6522e: Pull complete
+1b18d1e3a9a1: Pull complete
+ee46c34c57c4: Pull complete
+a4cf2ceb5cb4: Pull complete
+0321a8185f79: Pull complete
+d6f95283c949: Pull complete
+Digest: sha256:2ddbfb97fc8e40ad78df22b29cab0207818e03f68b2248a514e7eeefe62d188f
+Status: Downloaded newer image for lmsysorg/sglang:latest
+docker.io/lmsysorg/sglang:latest
+Finished pulling Docker image.
+
+==================================
+== Triton Inference Server Base ==
+==================================
+
+NVIDIA Release 24.04 (build 90085237)
+
+Copyright (c) 2018-2023, NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+Using model: $MODEL_NAME
+[2025-06-02 05:39:21] server_args=ServerArgs(model_path='deepseek-ai/DeepSeek-R1-Distill-Qwen-7B', tokenizer_path='deepseek-ai/DeepSeek-R1-Distill-Qwen-7B', tokenizer_mode='auto', skip_tokenizer_init=False, load_format='auto', trust_remote_code=True, dtype='auto', kv_cache_dtype='auto', quantization=None, quantization_param_path=None, context_length=None, device='cuda', served_model_name='deepseek-ai/DeepSeek-R1-Distill-Qwen-7B', chat_template=None, completion_template=None, is_embedding=False, enable_multimodal=None, revision=None, host='0.0.0.0', port=37837, mem_fraction_static=0.88, max_running_requests=None, max_total_tokens=None, chunked_prefill_size=8192, max_prefill_tokens=16384, schedule_policy='fcfs', schedule_conservativeness=1.0, cpu_offload_gb=0, page_size=1, tp_size=1, pp_size=1, max_micro_batch_size=None, stream_interval=1, stream_output=False, random_seed=118534428, constrained_json_whitespace_pattern=None, watchdog_timeout=300, dist_timeout=None, download_dir=None, base_gpu_id=0, gpu_id_step=1, log_level='info', log_level_http=None, log_requests=False, log_requests_level=0, show_time_cost=False, enable_metrics=False, bucket_time_to_first_token=None, bucket_e2e_request_latency=None, bucket_inter_token_latency=None, collect_tokens_histogram=False, decode_log_interval=40, enable_request_time_stats_logging=False, kv_events_config=None, api_key=None, file_storage_path='sglang_storage', enable_cache_report=False, reasoning_parser=None, dp_size=1, load_balance_method='round_robin', ep_size=1, dist_init_addr=None, nnodes=1, node_rank=0, json_model_override_args='{}', preferred_sampling_params=None, lora_paths=None, max_loras_per_batch=8, lora_backend='triton', attention_backend=None, sampling_backend='flashinfer', grammar_backend='xgrammar', speculative_algorithm=None, speculative_draft_model_path=None, speculative_num_steps=None, speculative_eagle_topk=None, speculative_num_draft_tokens=None, speculative_accept_threshold_single=1.0, speculative_accept_threshold_acc=1.0, speculative_token_map=None, enable_double_sparsity=False, ds_channel_config_path=None, ds_heavy_channel_num=32, ds_heavy_token_num=256, ds_heavy_channel_type='qk', ds_sparse_decode_threshold=4096, disable_radix_cache=False, disable_cuda_graph=False, disable_cuda_graph_padding=False, enable_nccl_nvls=False, enable_tokenizer_batch_encode=False, disable_outlines_disk_cache=False, disable_custom_all_reduce=False, disable_overlap_schedule=False, enable_mixed_chunk=False, enable_dp_attention=False, enable_dp_lm_head=False, enable_ep_moe=False, enable_deepep_moe=False, deepep_mode='auto', ep_num_redundant_experts=0, ep_dispatch_algorithm=None, init_expert_location='trivial', enable_eplb=False, eplb_rebalance_num_iterations=1000, expert_distribution_recorder_mode=None, expert_distribution_recorder_buffer_size=None, enable_expert_distribution_metrics=False, deepep_config=None, enable_torch_compile=False, torch_compile_max_bs=32, cuda_graph_max_bs=None, cuda_graph_bs=None, torchao_config='', enable_nan_detection=False, enable_p2p_check=False, triton_attention_reduce_in_fp32=False, triton_attention_num_kv_splits=8, num_continuous_decode_steps=1, delete_ckpt_after_loading=False, enable_memory_saver=False, allow_auto_truncate=False, enable_custom_logit_processor=False, tool_call_parser=None, enable_hierarchical_cache=False, hicache_ratio=2.0, hicache_size=0, hicache_write_policy='write_through_selective', flashinfer_mla_disable_ragged=False, warmups=None, moe_dense_tp_size=None, n_share_experts_fusion=0, disable_chunked_prefix_cache=False, disable_fast_image_processor=False, mm_attention_backend=None, debug_tensor_dump_output_folder=None, debug_tensor_dump_input_file=None, debug_tensor_dump_inject=False, disaggregation_mode='null', disaggregation_bootstrap_port=8998, disaggregation_transfer_backend='mooncake', disaggregation_ib_device=None, pdlb_url=None)
+[2025-06-02 05:39:31] Attention backend not set. Use flashinfer backend by default.
+[2025-06-02 05:39:31] Init torch distributed begin.
+[W602 05:39:32.483763549 socket.cpp:204] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[W602 05:39:32.484190771 socket.cpp:759] [c10d] The client socket cannot be initialized to connect to [3005:eea1:fd7f:0:b88f:8dea:d05e:0]:60573 (errno: 97 - Address family not supported by protocol).
+[2025-06-02 05:39:32] Init torch distributed ends. mem usage=0.00 GB
+[2025-06-02 05:39:32] init_expert_location from trivial
+[2025-06-02 05:39:33] Load weight begin. avail mem=78.65 GB
+[2025-06-02 05:39:34] Using model weights format ['*.safetensors']
+
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:09<00:09,  9.88s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:13<00:00,  6.31s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:13<00:00,  6.85s/it]
+
+[2025-06-02 05:40:47] Load weight end. type=Qwen2ForCausalLM, dtype=torch.bfloat16, avail mem=64.30 GB, mem usage=14.35 GB.
+[2025-06-02 05:40:47] KV Cache is allocated. #tokens: 1027093, K size: 27.43 GB, V size: 27.43 GB
+[2025-06-02 05:40:47] Memory pool end. avail mem=7.39 GB
+[2025-06-02 05:40:49] Capture cuda graph begin. This can take up to several minutes. avail mem=6.78 GB
+[2025-06-02 05:40:49] Capture cuda graph bs [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160]
+
+  0%|          | 0/23 [00:00<?, ?it/s]
+Capturing batches (avail_mem=6.68 GB):   0%|          | 0/23 [00:00<?, ?it/s]
+Capturing batches (avail_mem=6.68 GB):   4%|▍         | 1/23 [00:05<02:05,  5.71s/it]
+Capturing batches (avail_mem=6.47 GB):   4%|▍         | 1/23 [00:05<02:05,  5.71s/it]
+Capturing batches (avail_mem=6.47 GB):   9%|▊         | 2/23 [00:05<00:52,  2.52s/it]
+Capturing batches (avail_mem=6.35 GB):   9%|▊         | 2/23 [00:05<00:52,  2.52s/it]
+Capturing batches (avail_mem=6.35 GB):  13%|█▎        | 3/23 [00:06<00:29,  1.47s/it]
+Capturing batches (avail_mem=6.26 GB):  13%|█▎        | 3/23 [00:06<00:29,  1.47s/it]
+Capturing batches (avail_mem=6.26 GB):  17%|█▋        | 4/23 [00:06<00:18,  1.02it/s]
+Capturing batches (avail_mem=6.16 GB):  17%|█▋        | 4/23 [00:06<00:18,  1.02it/s]
+Capturing batches (avail_mem=6.16 GB):  22%|██▏       | 5/23 [00:06<00:12,  1.41it/s]
+Capturing batches (avail_mem=6.08 GB):  22%|██▏       | 5/23 [00:06<00:12,  1.41it/s]
+Capturing batches (avail_mem=6.08 GB):  26%|██▌       | 6/23 [00:06<00:09,  1.85it/s]
+Capturing batches (avail_mem=5.99 GB):  26%|██▌       | 6/23 [00:06<00:09,  1.85it/s]
+Capturing batches (avail_mem=5.99 GB):  30%|███       | 7/23 [00:07<00:06,  2.29it/s]
+Capturing batches (avail_mem=5.92 GB):  30%|███       | 7/23 [00:07<00:06,  2.29it/s]
+Capturing batches (avail_mem=5.92 GB):  35%|███▍      | 8/23 [00:07<00:05,  2.69it/s]
+Capturing batches (avail_mem=5.83 GB):  35%|███▍      | 8/23 [00:07<00:05,  2.69it/s]
+Capturing batches (avail_mem=5.83 GB):  39%|███▉      | 9/23 [00:07<00:04,  3.07it/s]
+Capturing batches (avail_mem=5.78 GB):  39%|███▉      | 9/23 [00:07<00:04,  3.07it/s]
+Capturing batches (avail_mem=5.78 GB):  43%|████▎     | 10/23 [00:07<00:03,  3.39it/s]
+Capturing batches (avail_mem=5.70 GB):  43%|████▎     | 10/23 [00:07<00:03,  3.39it/s]
+Capturing batches (avail_mem=5.70 GB):  48%|████▊     | 11/23 [00:08<00:03,  3.61it/s]
+Capturing batches (avail_mem=5.65 GB):  48%|████▊     | 11/23 [00:08<00:03,  3.61it/s]
+Capturing batches (avail_mem=5.65 GB):  52%|█████▏    | 12/23 [00:08<00:02,  3.81it/s]
+Capturing batches (avail_mem=5.58 GB):  52%|█████▏    | 12/23 [00:08<00:02,  3.81it/s]
+Capturing batches (avail_mem=5.58 GB):  57%|█████▋    | 13/23 [00:08<00:02,  3.97it/s]
+Capturing batches (avail_mem=5.58 GB):  57%|█████▋    | 13/23 [00:08<00:02,  3.97it/s]
+Capturing batches (avail_mem=5.58 GB):  61%|██████    | 14/23 [00:08<00:02,  4.06it/s]
+Capturing batches (avail_mem=5.52 GB):  61%|██████    | 14/23 [00:08<00:02,  4.06it/s]
+Capturing batches (avail_mem=5.52 GB):  65%|██████▌   | 15/23 [00:08<00:01,  4.15it/s]
+Capturing batches (avail_mem=5.49 GB):  65%|██████▌   | 15/23 [00:08<00:01,  4.15it/s]
+Capturing batches (avail_mem=5.49 GB):  70%|██████▉   | 16/23 [00:09<00:01,  4.24it/s]
+Capturing batches (avail_mem=5.44 GB):  70%|██████▉   | 16/23 [00:09<00:01,  4.24it/s]
+Capturing batches (avail_mem=5.44 GB):  74%|███████▍  | 17/23 [00:09<00:01,  4.36it/s]
+Capturing batches (avail_mem=5.43 GB):  74%|███████▍  | 17/23 [00:09<00:01,  4.36it/s]
+Capturing batches (avail_mem=5.43 GB):  78%|███████▊  | 18/23 [00:09<00:01,  4.49it/s]
+Capturing batches (avail_mem=5.41 GB):  78%|███████▊  | 18/23 [00:09<00:01,  4.49it/s]
+Capturing batches (avail_mem=5.41 GB):  83%|████████▎ | 19/23 [00:09<00:00,  4.56it/s]
+Capturing batches (avail_mem=5.41 GB):  83%|████████▎ | 19/23 [00:09<00:00,  4.56it/s]
+Capturing batches (avail_mem=5.41 GB):  87%|████████▋ | 20/23 [00:10<00:00,  4.61it/s]
+Capturing batches (avail_mem=5.36 GB):  87%|████████▋ | 20/23 [00:10<00:00,  4.61it/s]
+Capturing batches (avail_mem=5.36 GB):  91%|█████████▏| 21/23 [00:10<00:00,  4.51it/s]
+Capturing batches (avail_mem=5.36 GB):  91%|█████████▏| 21/23 [00:10<00:00,  4.51it/s]
+Capturing batches (avail_mem=5.36 GB):  96%|█████████▌| 22/23 [00:10<00:00,  4.60it/s]
+Capturing batches (avail_mem=5.33 GB):  96%|█████████▌| 22/23 [00:10<00:00,  4.60it/s]
+Capturing batches (avail_mem=5.33 GB): 100%|██████████| 23/23 [00:10<00:00,  4.60it/s]
+Capturing batches (avail_mem=5.33 GB): 100%|██████████| 23/23 [00:10<00:00,  2.15it/s]
+[2025-06-02 05:41:00] Capture cuda graph end. Time elapsed: 10.74 s. mem usage=1.45 GB. avail mem=5.33 GB.
+[2025-06-02 05:41:00] max_total_num_tokens=1027093, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=4013, context_len=131072
+[2025-06-02 05:41:04] INFO:     Started server process [121]
+[2025-06-02 05:41:04] INFO:     Waiting for application startup.
+[2025-06-02 05:41:04] INFO:     Application startup complete.
+[2025-06-02 05:41:04] INFO:     Uvicorn running on http://0.0.0.0:37837 (Press CTRL+C to quit)
+[2025-06-02 05:41:04] INFO:     127.0.0.1:57060 - "GET /v1/models HTTP/1.1" 200 OK
+[2025-06-02 05:41:05] INFO:     127.0.0.1:57074 - "GET /get_model_info HTTP/1.1" 200 OK
+[2025-06-02 05:41:05] Prefill batch. #new-seq: 1, #new-token: 7, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0
+[2025-06-02 05:41:11] INFO:     127.0.0.1:57090 - "POST /generate HTTP/1.1" 200 OK
+[2025-06-02 05:41:11] The server is fired up and ready to roll!
+[2025-06-02 05:41:17] Prefill batch. #new-seq: 1, #new-token: 26, #cached-token: 1, token usage: 0.00, #running-req: 0, #queue-req: 0
+[2025-06-02 05:41:18] Decode batch. #running-req: 1, #token: 60, token usage: 0.00, cuda graph: True, gen throughput (token/s): 2.29, #queue-req: 0
+[2025-06-02 05:41:18] Decode batch. #running-req: 1, #token: 100, token usage: 0.00, cuda graph: True, gen throughput (token/s): 92.38, #queue-req: 0
+[2025-06-02 05:41:19] Decode batch. #running-req: 1, #token: 140, token usage: 0.00, cuda graph: True, gen throughput (token/s): 92.40, #queue-req: 0
+[2025-06-02 05:41:19] Decode batch. #running-req: 1, #token: 180, token usage: 0.00, cuda graph: True, gen throughput (token/s): 92.21, #queue-req: 0
+[2025-06-02 05:41:20] Decode batch. #running-req: 1, #token: 220, token usage: 0.00, cuda graph: True, gen throughput (token/s): 92.21, #queue-req: 0
+[2025-06-02 05:41:20] Decode batch. #running-req: 1, #token: 260, token usage: 0.00, cuda graph: True, gen throughput (token/s): 92.16, #queue-req: 0
+[2025-06-02 05:41:20] Decode batch. #running-req: 1, #token: 300, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.86, #queue-req: 0
+[2025-06-02 05:41:21] Decode batch. #running-req: 1, #token: 340, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.65, #queue-req: 0
+[2025-06-02 05:41:21] Decode batch. #running-req: 1, #token: 380, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.60, #queue-req: 0
+[2025-06-02 05:41:22] Decode batch. #running-req: 1, #token: 420, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.58, #queue-req: 0
+[2025-06-02 05:41:22] Decode batch. #running-req: 1, #token: 460, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.16, #queue-req: 0
+[2025-06-02 05:41:23] Decode batch. #running-req: 1, #token: 500, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.11, #queue-req: 0
+[2025-06-02 05:41:23] Decode batch. #running-req: 1, #token: 540, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.97, #queue-req: 0
+[2025-06-02 05:41:24] Decode batch. #running-req: 1, #token: 580, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.35, #queue-req: 0
+[2025-06-02 05:41:24] Decode batch. #running-req: 1, #token: 620, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.47, #queue-req: 0
+[2025-06-02 05:41:24] Decode batch. #running-req: 1, #token: 660, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.44, #queue-req: 0
+[2025-06-02 05:41:25] Decode batch. #running-req: 1, #token: 700, token usage: 0.00, cuda graph: True, gen throughput (token/s): 89.90, #queue-req: 0
+[2025-06-02 05:41:25] Decode batch. #running-req: 1, #token: 740, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.93, #queue-req: 0
+[2025-06-02 05:41:26] Decode batch. #running-req: 1, #token: 780, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.34, #queue-req: 0
+[2025-06-02 05:41:26] Decode batch. #running-req: 1, #token: 820, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.51, #queue-req: 0
+[2025-06-02 05:41:27] Decode batch. #running-req: 1, #token: 860, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.49, #queue-req: 0
+[2025-06-02 05:41:27] Decode batch. #running-req: 1, #token: 900, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.44, #queue-req: 0
+[2025-06-02 05:41:28] Decode batch. #running-req: 1, #token: 940, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.41, #queue-req: 0
+[2025-06-02 05:41:28] Decode batch. #running-req: 1, #token: 980, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.39, #queue-req: 0
+[2025-06-02 05:41:28] Decode batch. #running-req: 1, #token: 1020, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.46, #queue-req: 0
+[2025-06-02 05:41:29] Decode batch. #running-req: 1, #token: 1060, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.29, #queue-req: 0
+[2025-06-02 05:41:29] Decode batch. #running-req: 1, #token: 1100, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.41, #queue-req: 0
+[2025-06-02 05:41:30] Decode batch. #running-req: 1, #token: 1140, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.42, #queue-req: 0
+[2025-06-02 05:41:30] Decode batch. #running-req: 1, #token: 1180, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.33, #queue-req: 0
+[2025-06-02 05:41:31] Decode batch. #running-req: 1, #token: 1220, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.17, #queue-req: 0
+[2025-06-02 05:41:31] Decode batch. #running-req: 1, #token: 1260, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.34, #queue-req: 0
+[2025-06-02 05:41:31] Decode batch. #running-req: 1, #token: 1300, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.29, #queue-req: 0
+[2025-06-02 05:41:32] Decode batch. #running-req: 1, #token: 1340, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.40, #queue-req: 0
+[2025-06-02 05:41:32] Decode batch. #running-req: 1, #token: 1380, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.22, #queue-req: 0
+[2025-06-02 05:41:33] Decode batch. #running-req: 1, #token: 1420, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.27, #queue-req: 0
+[2025-06-02 05:41:33] Decode batch. #running-req: 1, #token: 1460, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.25, #queue-req: 0
+[2025-06-02 05:41:34] Decode batch. #running-req: 1, #token: 1500, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.15, #queue-req: 0
+[2025-06-02 05:41:34] Decode batch. #running-req: 1, #token: 1540, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.66, #queue-req: 0
+[2025-06-02 05:41:35] Decode batch. #running-req: 1, #token: 1580, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.62, #queue-req: 0
+[2025-06-02 05:41:35] Decode batch. #running-req: 1, #token: 1620, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.67, #queue-req: 0
+[2025-06-02 05:41:35] Decode batch. #running-req: 1, #token: 1660, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.45, #queue-req: 0
+[2025-06-02 05:41:36] Decode batch. #running-req: 1, #token: 1700, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.56, #queue-req: 0
+[2025-06-02 05:41:36] Decode batch. #running-req: 1, #token: 1740, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.66, #queue-req: 0
+[2025-06-02 05:41:37] Decode batch. #running-req: 1, #token: 1780, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.01, #queue-req: 0
+[2025-06-02 05:41:37] Decode batch. #running-req: 1, #token: 1820, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.67, #queue-req: 0
+[2025-06-02 05:41:38] Decode batch. #running-req: 1, #token: 1860, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.64, #queue-req: 0
+[2025-06-02 05:41:38] Decode batch. #running-req: 1, #token: 1900, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.73, #queue-req: 0
+[2025-06-02 05:41:38] Decode batch. #running-req: 1, #token: 1940, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.72, #queue-req: 0
+[2025-06-02 05:41:39] Decode batch. #running-req: 1, #token: 1980, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.88, #queue-req: 0
+[2025-06-02 05:41:39] Decode batch. #running-req: 1, #token: 2020, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.96, #queue-req: 0
+[2025-06-02 05:41:40] Decode batch. #running-req: 1, #token: 2060, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.93, #queue-req: 0
+[2025-06-02 05:41:40] Decode batch. #running-req: 1, #token: 2100, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.84, #queue-req: 0
+[2025-06-02 05:41:41] Decode batch. #running-req: 1, #token: 2140, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.99, #queue-req: 0
+[2025-06-02 05:41:41] Decode batch. #running-req: 1, #token: 2180, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.99, #queue-req: 0
+[2025-06-02 05:41:42] Decode batch. #running-req: 1, #token: 2220, token usage: 0.00, cuda graph: True, gen throughput (token/s): 91.00, #queue-req: 0
+[2025-06-02 05:41:42] Decode batch. #running-req: 1, #token: 2260, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.78, #queue-req: 0
+[2025-06-02 05:41:42] Decode batch. #running-req: 1, #token: 2300, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.83, #queue-req: 0
+[2025-06-02 05:41:43] Decode batch. #running-req: 1, #token: 2340, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.91, #queue-req: 0
+[2025-06-02 05:41:43] Decode batch. #running-req: 1, #token: 2380, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.74, #queue-req: 0
+[2025-06-02 05:41:44] Decode batch. #running-req: 1, #token: 2420, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.96, #queue-req: 0
+[2025-06-02 05:41:44] Decode batch. #running-req: 1, #token: 2460, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.77, #queue-req: 0
+[2025-06-02 05:41:45] Decode batch. #running-req: 1, #token: 2500, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.66, #queue-req: 0
+[2025-06-02 05:41:45] Decode batch. #running-req: 1, #token: 2540, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.53, #queue-req: 0
+[2025-06-02 05:41:46] Decode batch. #running-req: 1, #token: 2580, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.55, #queue-req: 0
+[2025-06-02 05:41:46] Decode batch. #running-req: 1, #token: 2620, token usage: 0.00, cuda graph: True, gen throughput (token/s): 89.83, #queue-req: 0
+[2025-06-02 05:41:46] Decode batch. #running-req: 1, #token: 2660, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.21, #queue-req: 0
+[2025-06-02 05:41:47] Decode batch. #running-req: 1, #token: 2700, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.17, #queue-req: 0
+[2025-06-02 05:41:47] Decode batch. #running-req: 1, #token: 2740, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.22, #queue-req: 0
+[2025-06-02 05:41:48] Decode batch. #running-req: 1, #token: 2780, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.63, #queue-req: 0
+[2025-06-02 05:41:48] Decode batch. #running-req: 1, #token: 2820, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.40, #queue-req: 0
+[2025-06-02 05:41:49] Decode batch. #running-req: 1, #token: 2860, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.10, #queue-req: 0
+[2025-06-02 05:41:49] Decode batch. #running-req: 1, #token: 2900, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.07, #queue-req: 0
+[2025-06-02 05:41:50] Decode batch. #running-req: 1, #token: 2940, token usage: 0.00, cuda graph: True, gen throughput (token/s): 89.94, #queue-req: 0
+[2025-06-02 05:41:50] Decode batch. #running-req: 1, #token: 2980, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.49, #queue-req: 0
+[2025-06-02 05:41:50] Decode batch. #running-req: 1, #token: 3020, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.52, #queue-req: 0
+[2025-06-02 05:41:51] Decode batch. #running-req: 1, #token: 3060, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.48, #queue-req: 0
+[2025-06-02 05:41:51] Decode batch. #running-req: 1, #token: 3100, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.27, #queue-req: 0
+[2025-06-02 05:41:52] Decode batch. #running-req: 1, #token: 3140, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.16, #queue-req: 0
+[2025-06-02 05:41:52] Decode batch. #running-req: 1, #token: 3180, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.43, #queue-req: 0
+[2025-06-02 05:41:53] Decode batch. #running-req: 1, #token: 3220, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.34, #queue-req: 0
+[2025-06-02 05:41:53] Decode batch. #running-req: 1, #token: 3260, token usage: 0.00, cuda graph: True, gen throughput (token/s): 90.33, #queue-req: 0
+[2025-06-02 05:41:53] INFO:     127.0.0.1:42346 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+
+
+                    NOTE: Typically, the server runs in a separate terminal.
+                    In this notebook, we run the server and notebook code together, so their outputs are combined.
+                    To improve clarity, the server logs are displayed in the original black color, while the notebook outputs are highlighted in blue.
+                    We are running those notebooks in a CI parallel environment, so the throughput is not representative of the actual performance.
+                    
+Response:
+ Okay, I need to write a Python function that calculates the product of an array except for the current element. Let me think about how to approach this.
+
+First, I'll look at the problem again. The goal is, for each element in the array, to compute the product of all other elements. So, for example, if the array is [1, 2, 3], the result for each element would be [6, 3, 2], because 2*3=6, 1*3=3, and 1*2=2.
+
+I remember there's a way to do this efficiently without recalculating the product each time, which would be O(n^2) and not optimal. Instead, I can precompute the products to the left and right of each element and then multiply them together.
+
+Let me outline the steps:
+
+1. **Initialize two arrays**: left_products and right_products. The left_products array will store the product of all elements to the left of the current index, including the current element in the left array. Similarly, right_products will store the product to the right.
+
+Wait, maybe I should think differently. Actually, another approach is to compute the total product first, then for each element, divide the total product by that element to get the product of the rest. But that won't work if the array contains zeros because division by zero is undefined. So, that method isn't reliable.
+
+Hmm, so I need a better way that handles zeros correctly.
+
+Let me go back to the two arrays idea. I can compute a left_products array where each element is the product of all previous elements. Similarly, a right_products array where each element is the product of all subsequent elements. Then, for each index, the result is the product of the left and right products at that index.
+
+For example, with array [a, b, c, d], the left_products would be [1, a, a*b, a*b*c] and right_products would be [b*c*d, c*d, d, 1]. Then the result for each element is left_products[i] * right_products[i].
+
+Wait, no. Let me correct that. Actually, the left_products[i] should be the product of all elements before i, not including i. Similarly, right_products[i] should be the product of all elements after i, not including i. So, for index 0, left_products[0] is 1 (since there are no elements before it), and right_products[0] is the product of elements from 1 onwards. For index 1, left_products[1] is a, and right_products[1] is c*d. For index 2, left_products[2] is a*b, and right_products[2] is d. For index 3, left_products[3] is a*b*c, and right_products[3] is 1.
+
+Then, the product for each element is left_products[i] * right_products[i].
+
+This approach should handle zeros correctly because if there's a zero in the array, it will be accounted for in either the left or right product, but not both, so dividing isn't necessary.
+
+Let me think about the implementation steps:
+
+1. **Compute left_products**: Start with a 1 (since multiplying by nothing is 1). Then, for each element from the first to the last, multiply the current left_product by the element and store it in the left_products array.
+
+Wait, no. Wait, if I do that, the left_products[i] would be the product up to and including i, but I want it to be the product before i. So maybe I should initialize left_products as an empty list. Then, for each element in the array, except the first, multiply the previous product by the element and append it.
+
+Wait, perhaps it's better to initialize left_products with 1 as the first element, but I'm not sure. Let me think with an example.
+
+Take array [1, 2, 3, 4].
+
+Left_products:
+Index 0: product of nothing is 1
+Index 1: product of [1] is 1
+Index 2: product of [1,2] is 2
+Index 3: product of [1,2,3] is 6
+
+Right_products:
+Index 0: product of [2,3,4] is 24
+Index 1: product of [3,4] is 12
+Index 2: product of [4] is 4
+Index 3: product of nothing is 1
+
+So, the result for each index would be left_products[i] * right_products[i], which would be:
+
+Index 0: 1 * 24 = 24
+Index 1: 1 * 12 = 12
+Index 2: 2 * 4 = 8
+Index 3: 6 * 1 = 6
+
+Wait, the original example would be for [1,2,3], the result is [6,3,2], but according to this method, for [1,2,3], the left_products would be [1,1,2], right_products would be [6,3,1]. Multiplying gives [6,3,2], which is correct.
+
+So, the approach is correct.
+
+Now, let's think about the implementation:
+
+- Initialize left_products as a list with the first element as 1.
+- Then, for each element starting from the first (index 1), multiply the previous left_product by the current element and append to left_products.
+
+Wait, no. Let's correct that. For example, for [1,2,3], the left_products after first element is [1]. Then for the second element (2), multiply 1 * 2 = 2, append. Then for third element (3), multiply 2 * 3 = 6, append.
+
+So, left_products becomes [1,2,6], which is the product up to that index. But we need the product before the index. So, the product for index i is left_products[i-1]. So, maybe I should store in left_products the cumulative product up to each index, but the product for each index's left side is the cumulative product up to index-1.
+
+Wait, perhaps it's better to have left_products[i] be the product of elements from 0 to i-1, and right_products[i] be the product from i+1 to end.
+
+Yes, that makes sense.
+
+So, steps to compute left_products:
+
+Initialize left_products as an array of length n, filled with 1s.
+
+Then, for i from 1 to n-1:
+left_products[i] = left_products[i-1] * arr[i-1]
+
+Similarly, for right_products:
+
+Initialize right_products as an array of length n, filled with 1s.
+
+Then, for i from n-2 down to 0:
+right_products[i] = right_products[i+1] * arr[i+1]
+
+Then, for each index i, the product is left_products[i] * right_products[i].
+
+Let's test this with the example [1,2,3].
+
+n=3.
+
+left_products initialized as [1,1,1]
+
+i=1: left_products[1] = left_products[0] * arr[0] = 1*1=1
+i=2: left_products[2] = left_products[1] * arr[1] = 1*2=2
+
+So, left_products is [1,1,2]
+
+right_products initialized as [1,1,1]
+
+i=1 (n-2=1): right_products[1] = right_products[2] * arr[2] = 1*3=3
+i=0: right_products[0] = right_products[1] * arr[1] = 3*2=6
+
+So, right_products is [6,3,1]
+
+Then, for each index:
+
+index 0: 1 * 6 =6
+index 1:1 *3=3
+index 2:2 *1=2
+
+Which is correct.
+
+Another test case: [0,1,2]
+
+left_products: [1,0,0]
+right_products: [2,0,1]
+
+index 0:1*2=2
+index1:0*0=0
+index2:0*1=0
+
+Which is correct because:
+
+For 0: product is 1*2=2
+For 1: product is 0*2=0
+For 2: product is 0*1=0
+
+Wait, but for the original array [0,1,2], the product except self for index 0 is 1*2=2; for index1, it's 0*2=0; for index2, it's 0*1=0. So yes, correct.
+
+Another test case: [2,3,4,5]
+
+left_products: [1,2,6,24]
+right_products: [3*4*5=60, 4*5=20,5,1]
+
+Then:
+
+index0:1*60=60
+index1:2*20=40
+index2:6*5=30
+index3:24*1=24
+
+Which is 2*3*4*5=120 divided by each element:
+
+120/2=60
+120/3=40
+120/4=30
+120/5=24
+
+Yes, correct.
+
+So this approach works.
+
+Now, let's see how to implement this in Python.
+
+First, get the array. Let's say the array is called arr.
+
+n = len(arr)
+
+left_products = [1]*n
+
+for i in range(1, n):
+    left_products[i] = left_products[i-1] * arr[i-1]
+
+right_products = [1]*n
+
+for i in range(n-2, -1, -1):
+    right_products[i] = right_products[i+1] * arr[i+1]
+
+result = [left_products[i] * right_products[i] for i in range(n)]
+
+return result
+
+This should work.
+
+Wait, but what if the array is empty? Probably, the function should handle that by returning an empty list.
+
+Testing the code:
+
+Another test case: [0,0,0]
+
+left_products: [1,0,0]
+right_products: [0,0,1]
+
+result: [0,0,0]
+
+Which is correct because for each element, the product of others is 0.
+
+Another test case: [5]
+
+left_products: [1]
+right_products: [1]
+
+result: [1*1=1]
+
+But wait, the product except self for [5] should be 1, since there are no other elements.
+
+Yes.
+
+Another test case: [6,7,8,9,10]
+
+left_products: [1,6,42, 336, 3024]
+
+right_products: 7*8*9*10=5040, 8*9*10=720, 9*10=90,10,1
+
+Then:
+
+result[0] = 1*5040=5040
+
+result[1]=6*720=4320
+
+result[2]=42*90=3780
+
+result[3]=336*10=3360
+
+result[4]=3024*1=3024
+
+Which is correct because the total product is 6*7*8*9*10=30240
+
+30240 /6=5040
+
+30240/7=4320
+
+30240/8=3780
+
+30240/9=3360
+
+30240/10=3024
+
+Yes, correct.
+
+So, the code seems solid.
+</think>
+
+To solve this problem, we need to compute the product of all elements in an array except for each individual element. This should be done efficiently without recalculating the product from scratch for each element, which would result in an O(n^2) time complexity.
+
+### Approach
+The approach involves using two auxiliary arrays to store the cumulative products from the left and the right of each element. Here’s a step-by-step breakdown:
+
+1. **Initialize Left Products Array**: This array will store the product of all elements to the left of the current element. We start with an initial value of 1 for the first element since there are no elements before it.
+
+2. **Compute Left Products**: Iterate through the array starting from the second element. For each element, multiply the current element with the product of all previous elements (stored in the left products array) and update the left products array.
+
+3. **Initialize Right Products Array**: This array will store the product of all elements to the right of the current element. We start with an initial value of 1 for the last element since there are no elements after it.
+
+4. **Compute Right Products**: Iterate through the array in reverse starting from the second last element. For each element, multiply the current element with the product of all subsequent elements (stored in the right products array) and update the right products array.
+
+5. **Compute Result**: For each element, the product of all other elements is the product of the corresponding values in the left products and right products arrays.
+
+This approach ensures that each element is processed in constant time, leading to an overall time complexity of O(n).
+
+### Solution Code
+```python
+def productExceptSelf(arr):
+    n = len(arr)
+    if n == 0:
+        return []
+    
+    left_products = [1] * n
+    for i in range(1, n):
+        left_products[i] = left_products[i-1] * arr[i-1]
+    
+    right_products = [1] * n
+    for i in range(n-2, -1, -1):
+        right_products[i] = right_products[i+1] * arr[i+1]
+    
+    result = [left_products[i] * right_products[i] for i in range(n)]
+    return result
+```
+
+### Explanation
+1. **Initialization**: We start by initializing two arrays, `left_products` and `right_products`, each of the same length as the input array. These arrays will store cumulative products from the left and right, respectively.
+
+2. **Left Products Calculation**: We iterate from the second element to the end. For each element, we update the `left_products` array to be the product of all elements from the start up to the previous element.
+
+3. **Right Products Calculation**: We iterate from the second last element to the start. For each element, we update the `right_products` array to be the product of all elements from the next element to the end.
+
+4. **Result Calculation**: For each element, the result is the product of the corresponding values in `left_products` and `right_products`. This gives the product of all elements except the current one efficiently.
+
+This method handles all cases, including those with zeros, by leveraging the properties of cumulative products, ensuring correctness and efficiency.
+Response saved to response.txt
+Server process terminated.
+All done!
+🧹 Cleaning up...
